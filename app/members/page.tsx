@@ -59,7 +59,7 @@ export default function Page() {
                 className={styles.image}
               />
               <dl>
-                <dt className={StyleSheet.name}>{member.name}</dt>
+                <dt className={styles.name}>{member.name}</dt>
                 <dd className={styles.position}>{member.position}</dd>
                 <dd className={styles.profile}>{member.profile}</dd>
               </dl>
