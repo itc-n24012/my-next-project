@@ -4,7 +4,7 @@ import type {
   MicroCMSImage,
   MicroCMSListContent,
 } from "microcms-js-sdk";
-import { StringifyOptions } from "querystring";
+import { StaticGenerationAsyncStorage } from "next/dist/client/components/static-generation-async-storage.external";
 
 export type Member = {
   name: string;
@@ -19,7 +19,7 @@ export type Category = {
 
 export type News = {
   title: string;
-  description: StringifyOptions;
+  description: string;
   content: string;
   thumbnail?: MicroCMSImage;
   category: Category;
